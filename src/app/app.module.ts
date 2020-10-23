@@ -11,13 +11,18 @@ import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatIconModule } from '@angular/material/icon';
 import { MatToolbarModule } from '@angular/material/toolbar';
-import { MatList } from '@angular/material/list';
+import { MatListModule } from '@angular/material/list';
 import { ContactListComponent } from './contact-list/contact-list.component';
 import { ContactCreateComponent } from './contact-create/contact-create.component';
 import { ContactUpdateComponent } from './contact-update/contact-update.component';
 
 @NgModule({
-  declarations: [AppComponent, ContactListComponent, ContactCreateComponent, ContactUpdateComponent],
+  declarations: [
+    AppComponent,
+    ContactListComponent,
+    ContactCreateComponent,
+    ContactUpdateComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -29,7 +34,7 @@ import { ContactUpdateComponent } from './contact-update/contact-update.componen
     MatFormFieldModule,
     MatIconModule,
     MatToolbarModule,
-    MatList,
+    MatListModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
