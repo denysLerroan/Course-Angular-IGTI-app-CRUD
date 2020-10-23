@@ -1,21 +1,26 @@
 <mat-toolbar color="primary">
-  <span>Detalhes do contato</span>
+  <span>Detalhes do contato #{{ id }}</span>
 </mat-toolbar>
 
-<div class="form">
+<form [formGroup]="contactForm" class="form" (ngSubmit)="updateContact()">
   <mat-form-field appearance="standard">
     <mat-label>Nome</mat-label>
-    <input matInput />
+    <input matInput formControlName="name" />
   </mat-form-field>
   <mat-form-field appearance="standard">
     <mat-label>Telefone</mat-label>
-    <input matInput />
+    <input matInput formControlName="phone" />
   </mat-form-field>
 
   <div class="actions">
     <a routerLink="/contacts" mat-raised-button>Voltar para a lista</a>
-    <button type="submit" mat-raised-button color="primary">
+    <button
+      type="submit"
+      mat-raised-button
+      color="primary"
+      [disabled]="!contactForm.dirty || contactForm.invalid"
+    >
       Salvar alterações
     </button>
   </div>
-</div>
+</form>

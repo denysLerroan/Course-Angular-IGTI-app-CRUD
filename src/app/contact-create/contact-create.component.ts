@@ -16,13 +16,13 @@ export class ContactCreateComponent {
 
   constructor(
     private contactsService: ContactsService,
-    private router: Router
+    private route: Router
   ) {}
 
   createContact(): void {
     const newContact = this.contactForm.value;
     this.contactsService.createContact(newContact).subscribe((contact) => {
-      this.router.navigate(['/contacts']);
+      this.route.navigate(['/contacts']);
     });
   }
 }
