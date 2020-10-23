@@ -1,0 +1,15 @@
+.form {
+  padding: 8px 16px 0 16px;
+}
+
+mat-form-field {
+  width: 100%;
+}
+
+.actions {
+  position: fixed;
+  left: 16px;
+}
+.actions > a:first-child {
+  margin-right: 16px;
+}
