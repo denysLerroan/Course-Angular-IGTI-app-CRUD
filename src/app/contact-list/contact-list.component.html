@@ -1,1 +1,22 @@
-<p>contact-list works!</p>
+<mat-toolbar color="primary">
+  <span>Contatos</span>
+</mat-toolbar>
+
+<mat-nav-list>
+  <mat-list-item>
+    <a matLine href="#">Contato 1</a>
+    <button mat-icon-button>
+      <mat-icon>delete</mat-icon>
+    </button>
+  </mat-list-item>
+</mat-nav-list>
+
+<a
+  class="newContactButton"
+  routerLink="/contacts/create"
+  mat-fab
+  color="primary"
+  aria-label="Novo Contato"
+>
+  <mat-icon>add</mat-icon>
+</a>
