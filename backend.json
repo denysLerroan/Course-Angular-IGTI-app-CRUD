@@ -1,11 +1,6 @@
 {
   "contacts": [
     {
-      "id": 1,
-      "name": "Denys Lerroan",
-      "phone": "11 961008937"
-    },
-    {
       "id": 2,
       "name": "Eliane",
       "phone": "11 983573061"
@@ -16,24 +11,9 @@
       "phone": "11 34587444"
     },
     {
-      "id": 4,
-      "name": "Julio",
-      "phone": "12 965968447"
-    },
-    {
       "id": 5,
       "name": "Leonardo",
       "phone": "67 985477125"
-    },
-    {
-      "name": "a",
-      "phone": "1187845411",
-      "id": 6
-    },
-    {
-      "id": 7,
-      "name": "André",
-      "phone": "61648465165"
     }
   ]
 }
